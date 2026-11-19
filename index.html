@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Perfil Acessível</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="cabecalho">
+    <div class="container">
+      <h1>Meu Perfil Acessível</h1>
+      <p>Conheça um pouco sobre este estudante.</p>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="container">
+
+    <!-- Cartão de Perfil e Informações do Estudante -->
+    <section class="perfil-card" aria-labelledby="titulo-perfil">
+      <img 
+        src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'><rect width='120' height='120' rx='60' fill='%231D4ED8'/><circle cx='60' cy='45' r='22' fill='%23FDE68A'/><path d='M25 108c0-20 16-33 35-33s35 13 35 33' fill='%23FFFFFF'/></svg>" 
+        alt="Avatar do estudante" 
+        class="avatar"
+      >
+      <div class="perfil-dados">
+        <h2 id="titulo-perfil">Informações do Estudante</h2>
+        <ul class="lista-dados">
+          <li><strong>Nome:</strong> João</li>
+          <li><strong>Idade:</strong> 16 anos</li>
+          <li><strong>Curso:</strong> Técnico em Desenvolvimento de Sistemas</li>
+          <li><strong>Interesses:</strong> Tecnologia, jogos e música</li>
+          <li><strong>Objetivo:</strong> Aprender programação</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Grade de Cards -->
+    <div class="grid-cards">
+
+      <!-- Seção: Eu gosto -->
+      <section class="card" aria-labelledby="titulo-gostos">
+        <h2 id="titulo-gostos">Eu gosto de...</h2>
+        <ul class="lista-simples">
+          <li>🎮 Jogos</li>
+          <li>🎵 Música</li>
+          <li>💻 Computadores</li>
+          <li>⚽ Esportes</li>
+          <li>📚 Tecnologia</li>
+        </ul>
+      </section>
+
+      <!-- Seção: Como eu aprendo melhor? -->
+      <section class="card" aria-labelledby="titulo-aprendizado">
+        <h2 id="titulo-aprendizado">Como eu aprendo melhor?</h2>
+        <p class="subtitulo-card">📖 Aprendo melhor quando:</p>
+        <ul class="lista-simples">
+          <li>As instruções são claras.</li>
+          <li>As atividades estão organizadas.</li>
+          <li>Tenho exemplos práticos.</li>
+          <li>Sei exatamente o que preciso fazer.</li>
+          <li>As informações estão divididas em etapas.</li>
+        </ul>
+      </section>
+
+    </div>
+
+    <!-- Seção: Minha rotina -->
+    <section class="card" aria-labelledby="titulo-rotina">
+      <h2 id="titulo-rotina">Minha rotina</h2>
+      <table class="tabela-rotina">
+        <thead>
+          <tr>
+            <th scope="col">Horário</th>
+            <th scope="col">Atividade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>07:00</td>
+            <td>Acordar</td>
+          </tr>
+          <tr>
+            <td>08:00</td>
+            <td>Escola</td>
+          </tr>
+          <tr>
+            <td>12:00</td>
+            <td>Almoço</td>
+          </tr>
+          <tr>
+            <td>13:30</td>
+            <td>Estudos</td>
+          </tr>
+          <tr>
+            <td>18:00</td>
+            <td>Lazer e música</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Área do Botão -->
+    <div class="area-botao">
+      <button type="button" class="btn-principal">📋 Ver informações completas</button>
+    </div>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <div class="container">
+      <p>Desenvolvido por João • Projeto de Interface Acessível (2026)</p>
+    </div>
+  </footer>
+
+</body>
+</html>
